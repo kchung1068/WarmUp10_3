@@ -22,11 +22,11 @@ public class WarmUp10_3 {
 	}
 	public static void printArrayList(ArrayList list) {
 		String first = "[ ";
-		for (int x = 1; x < list.size(); x += 1) {
+		for (int x = 0; x < list.size(); x += 1) {
 			if (x != (list.size() - 1)) {
-				first += list.get(x) + "";
-			} else {
 				first += list.get(x) + " | ";
+			} else {
+				first += list.get(x) + " ]";
 			}
 
 		}
